@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+}
+
+#feliz {
+  color: purple;
+  text-align: center;
+  margin: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 100%;
+  position: relative;
+}
+
+#feliz::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: purple;
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+  justify-items: center;
+}
+.first {
+  display: grid;
+  justify-content: center;
+}
+
+.cover {
+  display: flex;
+  padding: 1rem;
+  max-width: 100%;
+  border-radius: 2rem;
+  justify-content: center;
+}
+img {
+  border-radius: 2rem;
+  height: 70vh;
+  max-width: 100%;
+}
+
+.text {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid purple;
+}
+
+span {
+  color: palevioletred  ;
+}
+
+@media(width >=800px){
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    #feliz::before {
+        content: "";
+        display: block;
+        text-align: center;
+        height: 0.1rem;
+    }
+
+}
